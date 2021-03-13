@@ -18,6 +18,31 @@ class UserMongo implements UserRepository {
         const userByEmail: User = await userModel.findOne({ email: nameOrEmail });
         return userByName || userByEmail;
     }
+
+    public async saveUser(name: string, surname: string, email: string, password: string): Promise<boolean> {
+        try {
+            const user = new userModel({
+                name,
+                surname,
+                email,
+                password
+            });
+            await user.save();
+            return true;
+        }
+        catch(e) {
+            console.log(e.message);
+            return false;
+        }
+    }
+
+    public async getUserByEmail(email: string): Promise<User> {
+        return await userModel.findOne({ email });
+    }
+    
+    public async getUserByName(name: string): Promise<User> {
+        return await userModel.findOne({ name });
+    }
     
     public comparePasswords(password: string, encodedPassword: string): boolean {
         return this.passwordHash.comparePassword(password, encodedPassword);
