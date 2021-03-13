@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import signInUser from '../core/interactors/signInUser.interactor';
+import signInUser from '../../../application/useCases/signInUser/signInUser';
 
 class AuthController {
 

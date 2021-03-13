@@ -1,4 +1,4 @@
-import User from "../../core/entities/User";
+import User from "./User";
 
 interface UserRepository {
     getByNameOrEmail(nameOrEmail: string): Promise<User>

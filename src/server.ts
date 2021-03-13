@@ -1,7 +1,7 @@
 import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
-import authRoutes from './routes/auth.routes';
+import authRoutes from './infra/api/routes/auth.routes';
 import IDatabase from './infra/database/IDatabase';
 import MongoDb from './infra/database/MongoDb';
 
