@@ -1,10 +1,10 @@
-import UserRepository from "../../domain/user.repository";
+import UserRepository from "./UserRepository";
 import User from "../../domain/User";
 import userModel from '../database/models/user.model';
 import BcryptHash from "../services/hash/BcryptHash";
 import PasswordHash from "../services/hash/PasswordHash";
 
-class UserMongo implements UserRepository {
+class UserMongoRepository implements UserRepository {
 
     private passwordHash: PasswordHash;
 
@@ -53,4 +53,4 @@ class UserMongo implements UserRepository {
     }
 }
 
-export default UserMongo;
+export default UserMongoRepository;

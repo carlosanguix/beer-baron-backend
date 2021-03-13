@@ -1,4 +1,4 @@
-import User from "./User";
+import User from "../../domain/User";
 
 interface UserRepository {
     getByNameOrEmail(nameOrEmail: string): Promise<User>

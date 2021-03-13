@@ -1,8 +1,8 @@
-import UserRepository from "../../../domain/user.repository";
-import UserMongo from "../../../infra/persistence/userMongo.datasource";
+import UserRepository from "../../../infra/persistence/UserRepository";
 import User from "../../../domain/User";
+import UserMongoRepository from "../../../infra/persistence/UserMongoRepository";
 
-const signInUser = (
+const makeSignInUser = (
     userRepository: UserRepository
 ) => async (userNameOrEmail: string, password: string) => {
     const user: User = await userRepository.getByNameOrEmail(userNameOrEmail);
@@ -24,6 +24,6 @@ const signInUser = (
     return userFormatted;
 };
 
-const signInUserWithRepository = signInUser(new UserMongo());
+const signInUser = makeSignInUser(new UserMongoRepository());
 
-export default signInUserWithRepository;
+export default signInUser;
