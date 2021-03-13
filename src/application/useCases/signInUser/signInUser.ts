@@ -1,6 +1,6 @@
-import UserRepository from "../../infra/repositories/user.repository";
-import UserMongo from "../dataSources/userMongo.datasource";
-import User from "../entities/User";
+import UserRepository from "../../../domain/user.repository";
+import UserMongo from "../../../infra/persistence/userMongo.datasource";
+import User from "../../../domain/User";
 
 const signInUser = (
     userRepository: UserRepository
