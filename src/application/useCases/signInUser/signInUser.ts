@@ -16,6 +16,7 @@ const makeSignInUser = (
     }
 
     const userFormatted = {
+        id: user.id,
         name: user.name,
         surname: user.surname,
         email: user.email,

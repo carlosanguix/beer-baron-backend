@@ -1,10 +1,15 @@
 import { Request, Response } from 'express';
 import signInUser from '../../../application/useCases/signInUser/signInUser';
 import signUpUser from '../../../application/useCases/singUpUser/signUpUser';
+import LifeTimeLimit from '../lib/LifeTimeLimit';
 
 class AuthController {
 
-    constructor() {}
+    private lifeTimeLimit: LifeTimeLimit;
+
+    constructor() {
+        this.lifeTimeLimit = new LifeTimeLimit();
+    }
 
     async signUp(req: Request, res: Response) {
         const { name, surname, email, password, passwordMatch } = req.body;
@@ -24,6 +29,8 @@ class AuthController {
 
         try {
             const user = await signInUser(nameOrEmail, password);
+
+            this.lifeTimeLimit.createToken({ id: user.id });
 
             res.status(200).json(user);
         }
