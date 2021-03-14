@@ -4,6 +4,7 @@ import cors from 'cors';
 import authRoutes from './infra/api/routes/auth.routes';
 import IDatabase from './infra/database/IDatabase';
 import MongoDb from './infra/database/MongoDb';
+import cookieParser from 'cookie-parser';
 
 export class Server {
     private app: express.Application;
@@ -26,6 +27,7 @@ export class Server {
         this.app.use(express.json());
         this.app.use(morgan('dev'));
         this.app.use(cors());
+        this.app.use(cookieParser());
     }
 
     private routes(): void {
