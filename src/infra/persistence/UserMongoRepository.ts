@@ -12,10 +12,9 @@ class UserMongoRepository implements UserRepository {
         this.passwordHash = new BcryptHash();
     }
     
-    public async getByNameOrEmail(nameOrEmail: string): Promise<User> {
-        console.log(nameOrEmail);
-        const userByName:  User = await userModel.findOne({ name: nameOrEmail });
-        const userByEmail: User = await userModel.findOne({ email: nameOrEmail });
+    public async getUserByNameOrEmail(nameOrEmail: string): Promise<User> {
+        const userByName:  User = await this.getUserByName(nameOrEmail);
+        const userByEmail: User = await this.getUserByEmail(nameOrEmail);
         return userByName || userByEmail;
     }
 

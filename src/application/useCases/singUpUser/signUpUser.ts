@@ -4,7 +4,6 @@ import UserMongoRepository from "../../../infra/persistence/UserMongoRepository"
 const createSignUp = (
     userRepository: UserRepository
 ) => async (name: string, surname: string, email: string, password: string, passwordMatch: string) => {
-    console.log({ name, surname, email, password, passwordMatch });
 
     if (password !== passwordMatch) {
         throw new Error('The passwords does not match.');
