@@ -42,6 +42,10 @@ class UserMongoRepository implements UserRepository {
     public async getUserByName(name: string): Promise<User> {
         return await userModel.findOne({ name });
     }
+
+    public async getUserById(id: string): Promise<User> {
+        return await userModel.findOne({ _id: id });
+    }
     
     public comparePasswords(password: string, encodedPassword: string): boolean {
         return this.passwordHash.comparePassword(password, encodedPassword);
