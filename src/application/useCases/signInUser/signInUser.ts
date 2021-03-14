@@ -5,24 +5,14 @@ import UserMongoRepository from "../../../infra/persistence/UserMongoRepository"
 const makeSignInUser = (
     userRepository: UserRepository
 ) => async (userNameOrEmail: string, password: string) => {
-    const user: User = await userRepository.getByNameOrEmail(userNameOrEmail);
+    const user: User = await userRepository.getUserByNameOrEmail(userNameOrEmail);
     
-    if (!user) {
-        throw new Error('Not found');
+    if (!user || 
+        !userRepository.comparePasswords(password, user.password)) {
+        throw new Error('Name or password are incorrects');
     }
 
-    if (!userRepository.comparePasswords(password, user.password)) {
-        throw new Error('Incorrect password');
-    }
-
-    const userFormatted = {
-        id: user.id,
-        name: user.name,
-        surname: user.surname,
-        email: user.email,
-    };
-
-    return userFormatted;
+    return user.id;
 };
 
 const signInUser = makeSignInUser(new UserMongoRepository());
