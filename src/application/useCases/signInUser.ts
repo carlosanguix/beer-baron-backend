@@ -1,6 +1,6 @@
-import UserRepository from "../../../infra/persistence/UserRepository";
-import User from "../../../domain/User";
-import UserMongoRepository from "../../../infra/persistence/UserMongoRepository";
+import UserRepository from "../../infra/persistence/UserRepository";
+import User from "../../domain/User";
+import UserMongoRepository from "../../infra/persistence/UserMongoRepository";
 
 const makeSignInUser = (
     userRepository: UserRepository

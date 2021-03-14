@@ -20,7 +20,7 @@ class AuthPersistence {
         });
     }
 
-    public isValidToken(token: string) {
+    public verifyToken(token: string): any {
         const secretToken = process.env.ACCESS_TOKEN_SECRET; 
         return jwt.verify(token,  secretToken as string, (_, decoded) => decoded);
     }

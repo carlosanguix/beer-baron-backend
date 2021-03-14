@@ -1,5 +1,5 @@
-import UserRepository from "../../../infra/persistence/UserRepository";
-import UserMongoRepository from "../../../infra/persistence/UserMongoRepository";
+import UserRepository from "../../infra/persistence/UserRepository";
+import UserMongoRepository from "../../infra/persistence/UserMongoRepository";
 
 const createSignUp = (
     userRepository: UserRepository
