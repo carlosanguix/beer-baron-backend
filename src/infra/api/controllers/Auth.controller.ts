@@ -1,35 +1,59 @@
 import { Request, Response } from 'express';
-import signInUser from '../../../application/useCases/signInUser/signInUser';
-import signUpUser from '../../../application/useCases/singUpUser/signUpUser';
+import signInUser from '../../../application/useCases/signInUser';
+import signUpUser from '../../../application/useCases/signUpUser';
+import getUserData from '../../../application/useCases/getUserData';
+import { authPersistence } from '../AuthPersistence';
 
 class AuthController {
 
-    constructor() {}
-
-    async signUp(req: Request, res: Response) {
+    public async signUp(req: Request, res: Response) {
         const { name, surname, email, password, passwordMatch } = req.body;
         
         try {
             const status = await signUpUser(name, surname, email, password, passwordMatch);
-            res.status(400).json({ msg: status ? 'User registered correctly' : 'Problems Registering the user.' });
+            if (!status) {
+                throw new Error('Problems saving the user');
+            }
+                
+            res.status(200).json({ success: true, msg: 'User registered correctly.' });
         }
         catch(e) {
-            console.log(e.message);
+            res.status(400).json({ error: true, msg: e.message });
         }
 
     }
     
-    async signIn(req: Request, res: Response) {
+    public async signIn(req: Request, res: Response) {
         const { nameOrEmail, password } = req.body;
 
         try {
-            const user = await signInUser(nameOrEmail, password);
+            const userId = await signInUser(nameOrEmail, password);
 
-            res.status(200).json(user);
+            if (!userId) {
+                throw new Error('Problems generating an user token');
+            }
+            
+            const token = authPersistence.createToken({ id: userId });
+            authPersistence.setCookie(res, token);
+            return res.status(200).json({ success: true });
         }
         catch(e) {
-            console.log(e.message);
-            res.status(400).json();
+            res.status(400).json({ error: true, msg: e.message });
+        }
+    }
+
+    public async whoAmI(req: Request, res: Response) {
+        try {
+            const token = req.cookies.jwt;
+            const payload = authPersistence.verifyToken(token);
+            if (!token || !payload) {
+                throw new Error('No valid token');
+            }
+            const user = await getUserData(payload.id);
+            res.status(200).json({ auth: true, user });
+        }
+        catch(e) {
+            return res.status(401).json({ msg: e.message, auth: false });
         }
     }
 

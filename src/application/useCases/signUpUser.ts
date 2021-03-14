@@ -1,10 +1,9 @@
-import UserRepository from "../../../domain/user.repository";
-import UserMongo from "../../../infra/persistence/userMongo.datasource";
+import UserRepository from "../../infra/persistence/UserRepository";
+import UserMongoRepository from "../../infra/persistence/UserMongoRepository";
 
-const signUpUser = (
+const createSignUp = (
     userRepository: UserRepository
 ) => async (name: string, surname: string, email: string, password: string, passwordMatch: string) => {
-    console.log({ name, surname, email, password, passwordMatch });
 
     if (password !== passwordMatch) {
         throw new Error('The passwords does not match.');
@@ -21,6 +20,6 @@ const signUpUser = (
     return await userRepository.saveUser(name, surname, email, encryptedPassword);
 };
 
-const signUpUserWithRepository = signUpUser(new UserMongo());
+const sinUpUser = createSignUp(new UserMongoRepository());
 
-export default signUpUserWithRepository;
+export default sinUpUser;

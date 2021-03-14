@@ -8,7 +8,6 @@ class BcryptHash implements PasswordHash {
     }
     
     comparePassword(password: string, passwordHashed: string): boolean {
-        console.log(password, passwordHashed);
         return bcrypt.compareSync(password, passwordHashed);
     }
 }

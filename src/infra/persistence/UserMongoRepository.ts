@@ -1,10 +1,10 @@
-import UserRepository from "../../domain/user.repository";
+import UserRepository from "./UserRepository";
 import User from "../../domain/User";
 import userModel from '../database/models/user.model';
 import BcryptHash from "../services/hash/BcryptHash";
 import PasswordHash from "../services/hash/PasswordHash";
 
-class UserMongo implements UserRepository {
+class UserMongoRepository implements UserRepository {
 
     private passwordHash: PasswordHash;
 
@@ -12,10 +12,9 @@ class UserMongo implements UserRepository {
         this.passwordHash = new BcryptHash();
     }
     
-    public async getByNameOrEmail(nameOrEmail: string): Promise<User> {
-        console.log(nameOrEmail);
-        const userByName:  User = await userModel.findOne({ name: nameOrEmail });
-        const userByEmail: User = await userModel.findOne({ email: nameOrEmail });
+    public async getUserByNameOrEmail(nameOrEmail: string): Promise<User> {
+        const userByName:  User = await this.getUserByName(nameOrEmail);
+        const userByEmail: User = await this.getUserByEmail(nameOrEmail);
         return userByName || userByEmail;
     }
 
@@ -43,6 +42,10 @@ class UserMongo implements UserRepository {
     public async getUserByName(name: string): Promise<User> {
         return await userModel.findOne({ name });
     }
+
+    public async getUserById(id: string): Promise<User> {
+        return await userModel.findOne({ _id: id });
+    }
     
     public comparePasswords(password: string, encodedPassword: string): boolean {
         return this.passwordHash.comparePassword(password, encodedPassword);
@@ -53,4 +56,4 @@ class UserMongo implements UserRepository {
     }
 }
 
-export default UserMongo;
+export default UserMongoRepository;
