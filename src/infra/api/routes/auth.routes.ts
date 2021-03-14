@@ -13,6 +13,7 @@ class AuthRoutes implements IRoutes {
     initRoutes() {
         this.router.post('/signin', authController.signIn);
         this.router.post('/signup', authController.signUp);
+        this.router.get('/whoAmI',  authController.whoAmI);
     }
 
 }
