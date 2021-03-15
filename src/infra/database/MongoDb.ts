@@ -4,9 +4,10 @@ import mongoose from 'mongoose';
 class MongoDb implements IDatabase {
     connect() {
         try {
-            const PORT = process.env.MONGO_PORT;
+            const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
+            const MONGO_URL = `mongodb+srv://ruben:${MONGO_PASSWORD}@mongo-fallero.s8xta.mongodb.net/beerBaron_test?retryWrites=true&w=majority`
             mongoose.connect(
-                process.env.URL_MONGO_DB || `mongodb://localhost:${PORT}/BeerBaron`,
+                MONGO_URL,
                 {
                     useNewUrlParser: true,
                     useUnifiedTopology: true,
