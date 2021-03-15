@@ -1,0 +1,988 @@
+[{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a3"
+  },
+  "id": 1,
+  "cat_id": 1,
+  "style_name": "Classic English-Style Pale Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a4"
+  },
+  "id": 2,
+  "cat_id": 1,
+  "style_name": "English-Style India Pale Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a5"
+  },
+  "id": 3,
+  "cat_id": 1,
+  "style_name": "Ordinary Bitter"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a6"
+  },
+  "id": 4,
+  "cat_id": 1,
+  "style_name": "Special Bitter or Best Bitter"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a7"
+  },
+  "id": 5,
+  "cat_id": 1,
+  "style_name": "Extra Special Bitter"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a8"
+  },
+  "id": 6,
+  "cat_id": 1,
+  "style_name": "English-Style Summer Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a9"
+  },
+  "id": 7,
+  "cat_id": 1,
+  "style_name": "Scottish-Style Light Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45aa"
+  },
+  "id": 8,
+  "cat_id": 1,
+  "style_name": "Scottish-Style Heavy Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ab"
+  },
+  "id": 9,
+  "cat_id": 1,
+  "style_name": "Scottish-Style Export Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ac"
+  },
+  "id": 10,
+  "cat_id": 1,
+  "style_name": "English-Style Pale Mild Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ad"
+  },
+  "id": 11,
+  "cat_id": 1,
+  "style_name": "English-Style Dark Mild Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ae"
+  },
+  "id": 12,
+  "cat_id": 1,
+  "style_name": "English-Style Brown Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45af"
+  },
+  "id": 13,
+  "cat_id": 1,
+  "style_name": "Old Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b0"
+  },
+  "id": 14,
+  "cat_id": 1,
+  "style_name": "Strong Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b1"
+  },
+  "id": 15,
+  "cat_id": 1,
+  "style_name": "Scotch Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b2"
+  },
+  "id": 16,
+  "cat_id": 1,
+  "style_name": "British-Style Imperial Stout"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b3"
+  },
+  "id": 17,
+  "cat_id": 1,
+  "style_name": "British-Style Barley Wine Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b4"
+  },
+  "id": 18,
+  "cat_id": 1,
+  "style_name": "Robust Porter"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b5"
+  },
+  "id": 19,
+  "cat_id": 1,
+  "style_name": "Brown Porter"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b6"
+  },
+  "id": 20,
+  "cat_id": 1,
+  "style_name": "Sweet Stout"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b7"
+  },
+  "id": 21,
+  "cat_id": 1,
+  "style_name": "Oatmeal Stout"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b8"
+  },
+  "id": 22,
+  "cat_id": 2,
+  "style_name": "Irish-Style Red Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45b9"
+  },
+  "id": 23,
+  "cat_id": 2,
+  "style_name": "Classic Irish-Style Dry Stout"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ba"
+  },
+  "id": 24,
+  "cat_id": 2,
+  "style_name": "Foreign (Export)-Style Stout"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45bb"
+  },
+  "id": 25,
+  "cat_id": 2,
+  "style_name": "Porter"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45bc"
+  },
+  "id": 26,
+  "cat_id": 3,
+  "style_name": "American-Style Pale Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45bd"
+  },
+  "id": 27,
+  "cat_id": 3,
+  "style_name": "Fresh Hop Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45be"
+  },
+  "id": 28,
+  "cat_id": 3,
+  "style_name": "Pale American-Belgo-Style Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45bf"
+  },
+  "id": 29,
+  "cat_id": 3,
+  "style_name": "Dark American-Belgo-Style Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c0"
+  },
+  "id": 30,
+  "cat_id": 3,
+  "style_name": "American-Style Strong Pale Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c1"
+  },
+  "id": 31,
+  "cat_id": 3,
+  "style_name": "American-Style India Pale Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c2"
+  },
+  "id": 32,
+  "cat_id": 3,
+  "style_name": "Imperial or Double India Pale Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c3"
+  },
+  "id": 33,
+  "cat_id": 3,
+  "style_name": "American-Style Amber/Red Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c4"
+  },
+  "id": 34,
+  "cat_id": 3,
+  "style_name": "Imperial or Double Red Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c5"
+  },
+  "id": 35,
+  "cat_id": 3,
+  "style_name": "American-Style Barley Wine Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c6"
+  },
+  "id": 36,
+  "cat_id": 3,
+  "style_name": "American-Style Wheat Wine Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c7"
+  },
+  "id": 37,
+  "cat_id": 3,
+  "style_name": "Golden or Blonde Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c8"
+  },
+  "id": 38,
+  "cat_id": 3,
+  "style_name": "American-Style Brown Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45c9"
+  },
+  "id": 39,
+  "cat_id": 3,
+  "style_name": "Smoke Porter"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ca"
+  },
+  "id": 40,
+  "cat_id": 3,
+  "style_name": "American-Style Sour Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45cb"
+  },
+  "id": 41,
+  "cat_id": 3,
+  "style_name": "American-Style India Black Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45cc"
+  },
+  "id": 42,
+  "cat_id": 3,
+  "style_name": "American-Style Stout"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45cd"
+  },
+  "id": 43,
+  "cat_id": 3,
+  "style_name": "American-Style Imperial Stout"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ce"
+  },
+  "id": 44,
+  "cat_id": 3,
+  "style_name": "Specialty Stouts"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45cf"
+  },
+  "id": 45,
+  "cat_id": 3,
+  "style_name": "American-Style Imperial Porter"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d0"
+  },
+  "id": 46,
+  "cat_id": 3,
+  "style_name": "Porter"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d1"
+  },
+  "id": 47,
+  "cat_id": 4,
+  "style_name": "German-Style Kolsch"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d2"
+  },
+  "id": 48,
+  "cat_id": 4,
+  "style_name": "Berliner-Style Weisse"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d3"
+  },
+  "id": 49,
+  "cat_id": 4,
+  "style_name": "Leipzig-Style Gose"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d4"
+  },
+  "id": 50,
+  "cat_id": 4,
+  "style_name": "South German-Style Hefeweizen"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d5"
+  },
+  "id": 51,
+  "cat_id": 4,
+  "style_name": "South German-Style Kristal Weizen"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d6"
+  },
+  "id": 52,
+  "cat_id": 4,
+  "style_name": "German-Style Leichtes Weizen"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d7"
+  },
+  "id": 53,
+  "cat_id": 4,
+  "style_name": "South German-Style Bernsteinfarbenes Weizen"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d8"
+  },
+  "id": 54,
+  "cat_id": 4,
+  "style_name": "South German-Style Dunkel Weizen"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45d9"
+  },
+  "id": 55,
+  "cat_id": 4,
+  "style_name": "South German-Style Weizenbock"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45da"
+  },
+  "id": 56,
+  "cat_id": 4,
+  "style_name": "Bamberg-Style Weiss Rauchbier"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45db"
+  },
+  "id": 57,
+  "cat_id": 4,
+  "style_name": "German-Style Brown Ale/Altbier"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45dc"
+  },
+  "id": 58,
+  "cat_id": 4,
+  "style_name": "Kellerbier - Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45dd"
+  },
+  "id": 59,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Flanders/Oud Bruin"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45de"
+  },
+  "id": 60,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Dubbel"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45df"
+  },
+  "id": 61,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Tripel"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e0"
+  },
+  "id": 62,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Quadrupel"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e1"
+  },
+  "id": 63,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Blonde Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e2"
+  },
+  "id": 64,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Pale Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e3"
+  },
+  "id": 65,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Pale Strong Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e4"
+  },
+  "id": 66,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Dark Strong Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e5"
+  },
+  "id": 67,
+  "cat_id": 5,
+  "style_name": "Belgian-Style White"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e6"
+  },
+  "id": 68,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Lambic"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e7"
+  },
+  "id": 69,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Gueuze Lambic"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e8"
+  },
+  "id": 70,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Fruit Lambic"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45e9"
+  },
+  "id": 71,
+  "cat_id": 5,
+  "style_name": "Belgian-Style Table Beer"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ea"
+  },
+  "id": 72,
+  "cat_id": 5,
+  "style_name": "Other Belgian-Style Ales"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45eb"
+  },
+  "id": 73,
+  "cat_id": 5,
+  "style_name": "French-Style Biere de Garde"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ec"
+  },
+  "id": 74,
+  "cat_id": 5,
+  "style_name": "French & Belgian-Style Saison"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ed"
+  },
+  "id": 75,
+  "cat_id": 6,
+  "style_name": "International-Style Pale Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ee"
+  },
+  "id": 76,
+  "cat_id": 6,
+  "style_name": "Australasian-Style Pale Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ef"
+  },
+  "id": 77,
+  "cat_id": 7,
+  "style_name": "German-Style Pilsener"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f0"
+  },
+  "id": 78,
+  "cat_id": 7,
+  "style_name": "Bohemian-Style Pilsener"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f1"
+  },
+  "id": 79,
+  "cat_id": 7,
+  "style_name": "European Low-Alcohol Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f2"
+  },
+  "id": 80,
+  "cat_id": 7,
+  "style_name": "Munchner-Style Helles"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f3"
+  },
+  "id": 81,
+  "cat_id": 7,
+  "style_name": "Dortmunder/European-Style Export"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f4"
+  },
+  "id": 82,
+  "cat_id": 7,
+  "style_name": "Vienna-Style Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f5"
+  },
+  "id": 83,
+  "cat_id": 7,
+  "style_name": "German-Style Marzen"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f6"
+  },
+  "id": 84,
+  "cat_id": 7,
+  "style_name": "German-Style Oktoberfest"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f7"
+  },
+  "id": 85,
+  "cat_id": 7,
+  "style_name": "European-Style Dark"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f8"
+  },
+  "id": 86,
+  "cat_id": 7,
+  "style_name": "German-Style Schwarzbier"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45f9"
+  },
+  "id": 87,
+  "cat_id": 7,
+  "style_name": "Bamberg-Style Marzen"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45fa"
+  },
+  "id": 88,
+  "cat_id": 7,
+  "style_name": "Bamberg-Style Helles Rauchbier"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45fb"
+  },
+  "id": 89,
+  "cat_id": 7,
+  "style_name": "Bamberg-Style Bock Rauchbier"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45fc"
+  },
+  "id": 90,
+  "cat_id": 7,
+  "style_name": "Traditional German-Style Bock"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45fd"
+  },
+  "id": 91,
+  "cat_id": 7,
+  "style_name": "German-Style Heller Bock/Maibock"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45fe"
+  },
+  "id": 92,
+  "cat_id": 7,
+  "style_name": "German-Style Doppelbock"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45ff"
+  },
+  "id": 93,
+  "cat_id": 7,
+  "style_name": "German-Style Eisbock"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4600"
+  },
+  "id": 94,
+  "cat_id": 7,
+  "style_name": "Kellerbier - Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4601"
+  },
+  "id": 95,
+  "cat_id": 8,
+  "style_name": "American-Style Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4602"
+  },
+  "id": 96,
+  "cat_id": 8,
+  "style_name": "American-Style Light Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4603"
+  },
+  "id": 97,
+  "cat_id": 8,
+  "style_name": "American-Style Low-Carb Light Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4604"
+  },
+  "id": 98,
+  "cat_id": 8,
+  "style_name": "American-Style Amber Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4605"
+  },
+  "id": 99,
+  "cat_id": 8,
+  "style_name": "American-Style Premium Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4606"
+  },
+  "id": 100,
+  "cat_id": 8,
+  "style_name": "American-Style Pilsener"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4607"
+  },
+  "id": 101,
+  "cat_id": 8,
+  "style_name": "American-Style Ice Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4608"
+  },
+  "id": 102,
+  "cat_id": 8,
+  "style_name": "American-Style Malt Liquor"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4609"
+  },
+  "id": 103,
+  "cat_id": 8,
+  "style_name": "American-Style Amber Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb460a"
+  },
+  "id": 104,
+  "cat_id": 8,
+  "style_name": "American-Style Marzen/Oktoberfest"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb460b"
+  },
+  "id": 105,
+  "cat_id": 8,
+  "style_name": "American-Style Dark Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb460c"
+  },
+  "id": 106,
+  "cat_id": 9,
+  "style_name": "Baltic-Style Porter"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb460d"
+  },
+  "id": 107,
+  "cat_id": 9,
+  "style_name": "Australasian-Style Light Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb460e"
+  },
+  "id": 108,
+  "cat_id": 9,
+  "style_name": "Latin American-Style Light Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb460f"
+  },
+  "id": 109,
+  "cat_id": 9,
+  "style_name": "Tropical-Style Light Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4610"
+  },
+  "id": 110,
+  "cat_id": 10,
+  "style_name": "International-Style Pilsener"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4611"
+  },
+  "id": 111,
+  "cat_id": 10,
+  "style_name": "Dry Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4612"
+  },
+  "id": 112,
+  "cat_id": 11,
+  "style_name": "Session Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4613"
+  },
+  "id": 113,
+  "cat_id": 11,
+  "style_name": "American-Style Cream Ale or Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4614"
+  },
+  "id": 114,
+  "cat_id": 11,
+  "style_name": "California Common Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4615"
+  },
+  "id": 115,
+  "cat_id": 11,
+  "style_name": "Japanese Sake-Yeast Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4616"
+  },
+  "id": 116,
+  "cat_id": 11,
+  "style_name": "Light American Wheat Ale or Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4617"
+  },
+  "id": 117,
+  "cat_id": 11,
+  "style_name": "Fruit Wheat Ale or Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4618"
+  },
+  "id": 118,
+  "cat_id": 11,
+  "style_name": "Dark American Wheat Ale or Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4619"
+  },
+  "id": 119,
+  "cat_id": 11,
+  "style_name": "American Rye Ale or Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb461a"
+  },
+  "id": 120,
+  "cat_id": 11,
+  "style_name": "German-Style Rye Ale"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb461b"
+  },
+  "id": 121,
+  "cat_id": 11,
+  "style_name": "Fruit Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb461c"
+  },
+  "id": 122,
+  "cat_id": 11,
+  "style_name": "Field Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb461d"
+  },
+  "id": 123,
+  "cat_id": 11,
+  "style_name": "Pumpkin Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb461e"
+  },
+  "id": 124,
+  "cat_id": 11,
+  "style_name": "Chocolate/Cocoa-Flavored Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb461f"
+  },
+  "id": 125,
+  "cat_id": 11,
+  "style_name": "Coffee-Flavored Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4620"
+  },
+  "id": 126,
+  "cat_id": 11,
+  "style_name": "Herb and Spice Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4621"
+  },
+  "id": 127,
+  "cat_id": 11,
+  "style_name": "Specialty Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4622"
+  },
+  "id": 128,
+  "cat_id": 11,
+  "style_name": "Specialty Honey Lager or Ale"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4623"
+  },
+  "id": 129,
+  "cat_id": 11,
+  "style_name": "Gluten-Free Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4624"
+  },
+  "id": 130,
+  "cat_id": 11,
+  "style_name": "Smoke Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4625"
+  },
+  "id": 131,
+  "cat_id": 11,
+  "style_name": "Experimental Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4626"
+  },
+  "id": 132,
+  "cat_id": 11,
+  "style_name": "Out of Category"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4627"
+  },
+  "id": 133,
+  "cat_id": 11,
+  "style_name": "Wood- and Barrel-Aged Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4628"
+  },
+  "id": 134,
+  "cat_id": 11,
+  "style_name": "Wood- and Barrel-Aged Pale to Amber Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb4629"
+  },
+  "id": 135,
+  "cat_id": 11,
+  "style_name": "Wood- and Barrel-Aged Dark Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb462a"
+  },
+  "id": 136,
+  "cat_id": 11,
+  "style_name": "Wood- and Barrel-Aged Strong Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb462b"
+  },
+  "id": 137,
+  "cat_id": 11,
+  "style_name": "Wood- and Barrel-Aged Sour Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb462c"
+  },
+  "id": 138,
+  "cat_id": 11,
+  "style_name": "Aged Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb462d"
+  },
+  "id": 139,
+  "cat_id": 11,
+  "style_name": "Other Strong Ale or Lager"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb462e"
+  },
+  "id": 140,
+  "cat_id": 11,
+  "style_name": "Non-Alcoholic Beer"
+},{
+  "_id": {
+    "$oid": "604f89ebefd57d3f98cb462f"
+  },
+  "id": 141,
+  "cat_id": 11,
+  "style_name": "Winter Warmer"
+}]

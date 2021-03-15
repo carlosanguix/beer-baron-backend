@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4598"
+  },
+  "id": 1,
+  "cat_name": "British Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb4599"
+  },
+  "id": 2,
+  "cat_name": "Irish Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb459a"
+  },
+  "id": 3,
+  "cat_name": "North American Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb459b"
+  },
+  "id": 4,
+  "cat_name": "German Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb459c"
+  },
+  "id": 5,
+  "cat_name": "Belgian and French Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb459d"
+  },
+  "id": 6,
+  "cat_name": "International Ale"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb459e"
+  },
+  "id": 7,
+  "cat_name": "German Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb459f"
+  },
+  "id": 8,
+  "cat_name": "North American Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a0"
+  },
+  "id": 9,
+  "cat_name": "Other Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a1"
+  },
+  "id": 10,
+  "cat_name": "International Lager"
+},{
+  "_id": {
+    "$oid": "604f89eaefd57d3f98cb45a2"
+  },
+  "id": 11,
+  "cat_name": "Other Style"
+}]
