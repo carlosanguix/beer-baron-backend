@@ -1,19 +1,22 @@
 import UserRepository from "../../infra/persistence/UserRepository";
 import UserMongoRepository from "../../infra/persistence/UserMongoRepository";
 
-const createSignUp = (
+export const createSignUp = (
     userRepository: UserRepository
 ) => async (name: string, surname: string, email: string, password: string, passwordMatch: string) => {
 
     if (password !== passwordMatch) {
-        throw new Error('The passwords does not match.');
+        throw new Error('The passwords does not match');
     }
 
     const userExistsWithName  = await userRepository.getUserByName(name);
-    const userExistsWithEmail = await userRepository.getUserByEmail(email);
+    if (userExistsWithName) {
+        throw new Error('That username is already registered');
+    }
 
-    if (userExistsWithName || userExistsWithEmail) {
-        throw new Error('User already exists with the same name or email.');
+    const userExistsWithEmail = await userRepository.getUserByEmail(email);
+    if (userExistsWithEmail) {
+        throw new Error('That email is already registered');
     }
 
     const encryptedPassword = userRepository.encryptPassword(password);

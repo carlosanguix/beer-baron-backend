@@ -2,7 +2,7 @@ import UserRepository from "../../infra/persistence/UserRepository";
 import UserMongoRepository from "../../infra/persistence/UserMongoRepository";
 import User from "../../domain/User";
 
-const makeGetUserData = (
+export const makeGetUserData = (
     userRepository: UserRepository
 ) => async (id: string) => {
     const user: User = await userRepository.getUserById(id);

@@ -24,6 +24,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
+    "test": "jest --testEnvironment=node --verbose --forceExit --watchAll --maxWorkers=1",
     "dev": "nodemon -e ts --exec \"npm run build && npm start \""
   },
   "repository": {
@@ -36,5 +37,10 @@
   "bugs": {
     "url": "https://github.com/carlosanguix/beer-baron-backend/issues"
   },
-  "homepage": "https://github.com/carlosanguix/beer-baron-backend#readme"
+  "homepage": "https://github.com/carlosanguix/beer-baron-backend#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.3"
+  }
 }

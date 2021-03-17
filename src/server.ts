@@ -1,6 +1,5 @@
 import express from 'express';
 import morgan from 'morgan';
-import cors from 'cors';
 import authRoutes from './infra/api/routes/auth.routes';
 import IDatabase from './infra/database/IDatabase';
 import MongoDb from './infra/database/MongoDb';
@@ -26,7 +25,6 @@ export class Server {
     private middlewares(): void {
         this.app.use(express.json());
         this.app.use(morgan('dev'));
-        this.app.use(cors());
         this.app.use(cookieParser());
     }
 
