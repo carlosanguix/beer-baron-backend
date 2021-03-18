@@ -7,10 +7,10 @@ import { authPersistence } from '../AuthPersistence';
 class AuthController {
 
     public async signUp(req: Request, res: Response) {
-        const { name, surname, email, password, passwordMatch } = req.body;
+        const { username, email, password, repeatPassword } = req.body;
         
         try {
-            const status = await signUpUser(name, surname, email, password, passwordMatch);
+            const status = await signUpUser(username, email, password, repeatPassword);
             if (!status) {
                 throw new Error('Problems saving the user');
             }

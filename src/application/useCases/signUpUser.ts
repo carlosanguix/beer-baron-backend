@@ -3,7 +3,7 @@ import UserMongoRepository from "../../infra/persistence/UserMongoRepository";
 
 export const createSignUp = (
     userRepository: UserRepository
-) => async (name: string, surname: string, email: string, password: string, passwordMatch: string) => {
+) => async (name: string, email: string, password: string, passwordMatch: string) => {
 
     if (password !== passwordMatch) {
         throw new Error('The passwords does not match');
@@ -20,7 +20,7 @@ export const createSignUp = (
     }
 
     const encryptedPassword = userRepository.encryptPassword(password);
-    return await userRepository.saveUser(name, surname, email, encryptedPassword);
+    return await userRepository.saveUser(name, email, encryptedPassword);
 };
 
 const sinUpUser = createSignUp(new UserMongoRepository());

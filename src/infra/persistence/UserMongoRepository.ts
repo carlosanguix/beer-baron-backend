@@ -18,11 +18,10 @@ class UserMongoRepository implements UserRepository {
         return userByName || userByEmail;
     }
 
-    public async saveUser(name: string, surname: string, email: string, password: string): Promise<boolean> {
+    public async saveUser(name: string, email: string, password: string): Promise<boolean> {
         try {
             const user = new userModel({
                 name,
-                surname,
                 email,
                 password
             });

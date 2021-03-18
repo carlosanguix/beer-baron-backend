@@ -13,7 +13,6 @@ export const makeGetUserData = (
 
     return {
         name: user.name,
-        surname: user.surname,
         email: user.email,
     };
 };
