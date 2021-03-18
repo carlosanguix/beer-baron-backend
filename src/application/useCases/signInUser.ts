@@ -1,6 +1,10 @@
 import UserRepository from "../../infra/persistence/UserRepository";
 import User from "../../domain/User";
 import UserMongoRepository from "../../infra/persistence/UserMongoRepository";
+import { 
+    NO_USER_FOUND,
+    PASSWORD_INCORRECT,
+} from '../../constants/errorExceptions';
 
 export const makeSignInUser = (
     userRepository: UserRepository
@@ -8,11 +12,11 @@ export const makeSignInUser = (
     const user: User = await userRepository.getUserByNameOrEmail(userNameOrEmail);
     
     if (!user) {
-        throw new Error('No user found');
+        throw new Error(NO_USER_FOUND);
     }
 
     if (!userRepository.comparePasswords(password, user.password)) {
-        throw new Error('Password incorrect');
+        throw new Error(PASSWORD_INCORRECT);
     }
 
     return user.id;

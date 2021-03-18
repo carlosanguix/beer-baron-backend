@@ -1,6 +1,7 @@
 import UserRepository from "../../infra/persistence/UserRepository";
 import UserMongoRepository from "../../infra/persistence/UserMongoRepository";
 import User from "../../domain/User";
+import { NO_USER_FOUND } from '../../constants/errorExceptions';
 
 export const makeGetUserData = (
     userRepository: UserRepository
@@ -8,7 +9,7 @@ export const makeGetUserData = (
     const user: User = await userRepository.getUserById(id);
 
     if (!user) {
-        throw new Error('No user found with that id');
+        throw new Error(NO_USER_FOUND);
     }
 
     return {

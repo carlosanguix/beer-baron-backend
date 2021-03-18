@@ -1,6 +1,11 @@
 import UserRepositoryMock from '../../__mocks__/UserRepositoryMock';
 import { createSignUp } from '../../src/application/useCases/signUpUser';
 import fakeData from '../../__mocks__/fakeData';
+import { 
+    EMAIL_ALREADY_REGISTERED,
+    USERNAME_ALREADY_REGISTERED, 
+    PASSWORDS_DOES_NOT_MATCH 
+} from '../../src/constants/errorExceptions';
 
 describe('signUpUser useCase', () => {
 
@@ -27,19 +32,19 @@ describe('signUpUser useCase', () => {
     it('should fail registering with different passwords', async () => {
         await expect(() => signUpUser('Jose', 'jose@gmail.com', 'pass1', 'pass2'))
             .rejects
-            .toThrow('The passwords does not match');
+            .toThrow(PASSWORDS_DOES_NOT_MATCH);
     });
     
     it('should fail registering with an username already registered', async () => {
         await expect(() => signUpUser('Pepe', 'jose@gmail.com', 'pass', 'pass'))
             .rejects
-            .toThrow('That username is already registered');
+            .toThrow(USERNAME_ALREADY_REGISTERED);
     });
 
     it('should fail registering with an email already registered', async () => {
         await expect(() => signUpUser('Pedro', 'pepe@gmail.com', 'pass', 'pass'))
             .rejects
-            .toThrow('That email is already registered');
+            .toThrow(EMAIL_ALREADY_REGISTERED);
     });
 
 });

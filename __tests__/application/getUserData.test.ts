@@ -1,6 +1,7 @@
 import UserRepositoryMock from '../../__mocks__/UserRepositoryMock';
 import { makeGetUserData } from '../../src/application/useCases/getUserData';
 import fakeData from '../../__mocks__/fakeData';
+import { NO_USER_FOUND } from '../../src/constants/errorExceptions';
 
 describe('getUserData useCase', () => {
 
@@ -20,7 +21,7 @@ describe('getUserData useCase', () => {
         const userId = '3';
         await expect(getUserData(userId))
             .rejects
-            .toThrow('No user found with that id');
+            .toThrow(NO_USER_FOUND);
     });
 
 });
