@@ -18,7 +18,7 @@ describe('getUserData useCase', () => {
 
     it('should throw an error with id "3"', async () => {
         const userId = '3';
-        await expect(getUserData())
+        await expect(getUserData(userId))
             .rejects
             .toThrow('No user found with that id');
     });

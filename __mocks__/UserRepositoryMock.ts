@@ -24,8 +24,8 @@ class UserRepositoryMock implements UserRepository {
         return this.fakeData.find(user => user.id === id);
     }
     
-    saveUser(name: string, surname: string, email: string, password: string) {
-        this.fakeData.push({ name, surname, email, password });
+    saveUser(name: string, email: string, password: string) {
+        this.fakeData.push({ name, email, password });
         return true;
     }
 
