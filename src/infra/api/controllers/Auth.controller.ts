@@ -3,22 +3,28 @@ import signInUser from '../../../application/useCases/signInUser';
 import signUpUser from '../../../application/useCases/signUpUser';
 import getUserData from '../../../application/useCases/getUserData';
 import { authPersistence } from '../AuthPersistence';
+import { helpersControllers } from './HelpersControllers'; 
 
 class AuthController {
 
     public async signUp(req: Request, res: Response) {
         const { username, email, password, repeatPassword } = req.body;
+        console.log(this)
         
         try {
             const status = await signUpUser(username, email, password, repeatPassword);
             if (!status) {
-                throw new Error('Problems saving the user');
+                throw new Error('Problems saving the user.');
             }
                 
             res.status(200).json({ success: true, msg: 'User registered correctly.' });
         }
         catch(e) {
-            res.status(400).json({ error: true, msg: e.message });
+            res.status(400).json({ 
+                error: true,
+                msg: e.message,
+                ...helpersControllers.errorsMessages[e.message]
+            });
         }
 
     }
@@ -28,10 +34,6 @@ class AuthController {
 
         try {
             const userId = await signInUser(nameOrEmail, password);
-
-            if (!userId) {
-                throw new Error('Problems generating an user token');
-            }
             
             const token = authPersistence.createToken({ id: userId });
             authPersistence.setCookie(res, token);
